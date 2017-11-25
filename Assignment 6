@@ -1,0 +1,51 @@
+/* Tyrick.Turney
+   Created 11.23.17
+   Version.W.1
+   Professor Reid
+   CS 151
+   /////*/
+   
+#include <iostream>
+#include <sstream>
+#include <iomanip>
+#include <fstream>
+#include <cstdlib>
+using namespace std;
+ 
+ //Name: type()
+ //Parameters: string filename
+ // Return: void
+   
+void type();
+void type()
+{
+   string filename;
+  ifstream file;
+  cin >> filename;
+  file.open(filename);
+  if (!file.is_open())
+  {
+    cout << "File does not exist";
+  }
+  //01 (start) 02
+  //02 /Input filename/ 03
+  //03 <!file.is_open()> 04
+  //04 /print["File does not exist"]/05
+  //05 (exit)
+  
+  //Name: main()
+  //Parameters: Nothing
+  //Return: 0
+}
+int main()
+{
+   
+  cout << "Enter a Filename: ";
+  type();
+  return 0;
+}
+
+// 01 (start) 02
+// 02 /print ["Enter Filename: "]/ 03
+// 03 /Output type()/ 04
+// 04 (exit)
